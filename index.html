@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="banner">
+
+        <section>
+            <div class="circle"></div>
+        </section>
+
+        <nav class="nav">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Help</li>
+                <li>Contact US</li>
+                <li>Connect</li>
+            </ul>
+        </nav>
+
+        <section class="content">
+            <div class="text-aria">
+                <h1>It's Not Just Coffee
+                    <br>
+                    It's
+                    <span>
+                        Starbucks
+                    </span>
+                </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum suscipit accusantium iure, corporis, nam, eveniet quam velit culpa veritatis tempore explicabo necessitatibus provident soluta. Dolorem eum temporibus animi sunt dicta?</p>
+
+                <a href="">Click Me</a>
+            </div>
+
+            <div class="main-img">
+                <div class="img-box">
+                    <img src="images/img1.png" class="starbucks">
+                </div>
+            </div>
+
+            <div class="thm">
+                <ul>
+                    <li> <img src="images/thm1.png" onclick="imgslider('images/img1.png');changecirclecolor('#017143')"></li>
+                    <li> <img src="images/thm2.png" onclick="imgslider('images/img2.png');changecirclecolor('#eb7495')"></li>
+                    <li> <img src="images/thm3.png" onclick="imgslider('images/img3.png');changecirclecolor('#d752b1')"></li>
+                </ul>
+            </div>
+
+            <div class="sci">
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <script type="text/javascript">
+            function imgslider(anything){
+                document.querySelector('.starbucks').src = anything;
+            }
+
+            function changecirclecolor(color){
+                const circle = document.querySelector('.circle');
+                circle.style.background = color;
+            }
+        </script>
+        
+        
+    </header>
+
+
+
+</body>
+</html>

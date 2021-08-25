@@ -1,0 +1,169 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.banner{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 100px;
+}
+
+
+.nav ul{
+    display: flex;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 60%;
+}
+
+.nav ul li{
+    list-style: none;
+    color: #333;
+    font-weight: 600;
+    margin-left: 40px;
+}
+
+.nav ul li:hover{
+    color: orangered;
+    text-decoration: underline;
+}
+
+.content{
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-aria{
+    position: relative;
+    max-width: 600px;
+}
+
+.text-aria h1{
+    color: #333;
+    font-size: 4em;
+    font-weight: 600;
+}
+
+.text-aria h1 span{
+    color: #017143;
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+.text-aria p{
+    color: #333;
+}
+
+.text-aria a{
+    display: inline-block;
+    background-color: #017143;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.text-aria a:hover{
+    background-color: orangered;
+    color: black;
+}
+
+.img-box{
+    display: flex;
+    width: 600px;
+    justify-content: flex-end;
+    padding-top: 50px;
+    padding-right: 50px;
+}
+
+.img-box img{
+    max-width: 340px;
+}
+
+.thm{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+}
+
+.thm ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+.thm ul li:hover{
+    transform: translateY(-30px);
+}
+
+.thm ul li img{
+    max-width: 60px;
+}
+
+.sci{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+    top: 50%;
+    right: -10%;
+    transform: rotate(90deg);
+
+}
+
+.sci ul li{
+    display: inline-block;
+    list-style: none;
+    transform: scale(0.6);
+    margin: 5px 0;
+    font-weight: 800;
+    font-size: 20px;
+    filter: invert(1);
+    
+}
+
+.sci ul li:hover{
+    color: yellow;
+}
+
+.circle{
+    position: absolute;
+    background-color: #017143;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    clip-path: circle(600px at right 800px);
+
+}
+
